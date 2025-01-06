@@ -1,0 +1,45 @@
+/*
+* File: src/styles/globals.css
+* Description: Global styles and Tailwind CSS configuration.
+* Contains base styles, custom utilities, and Tailwind imports.
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-900 bg-white;
+  }
+
+  /* TODO: Add custom fonts */
+  /* TODO: Add base heading styles */
+  /* TODO: Add base text styles */
+}
+
+@layer components {
+  /* Custom component styles */
+  .btn {
+    @apply px-4 py-2 rounded-full transition-colors;
+  }
+  
+  /* TODO: Add custom component classes */
+  /* TODO: Add responsive variants */
+  /* TODO: Add state variants */
+}
+
+@layer utilities {
+  /* Custom utility classes */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* TODO: Add custom utility classes */
+  /* TODO: Add responsive utilities */
+  /* TODO: Add animation utilities */
+}
