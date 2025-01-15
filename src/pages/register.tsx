@@ -44,7 +44,7 @@ const RegisterPage = () => {
               <h2 className="text-3xl font-bold text-center mb-12">Important Dates</h2>
               <div className="bg-white rounded-xl shadow-md overflow-hidden">
                 <table className="w-full">
-                  <thead className="bg-gray-50">
+                  <thead className="bg-gray-100">
                     <tr>
                       <th className="px-6 py-4 text-left text-lg font-semibold text-gray-900">Event</th>
                       <th className="px-6 py-4 text-right text-lg font-semibold text-gray-900">Date</th>
@@ -53,19 +53,19 @@ const RegisterPage = () => {
                   <tbody className="divide-y divide-gray-200">
                     <tr>
                       <td className="px-6 py-4 text-gray-800">Registration Opens</td>
-                      <td className="px-6 py-4 text-right text-gray-800">February 12th 2024</td>
+                      <td className="px-6 py-4 text-right text-gray-800">Soon!</td>
                     </tr>
                     <tr>
                       <td className="px-6 py-4 text-gray-800">Registration Ends</td>
-                      <td className="px-6 py-4 text-right text-gray-800">May 9th 2024</td>
+                      <td className="px-6 py-4 text-right text-gray-800">TBD</td>
                     </tr>
                     <tr>
                       <td className="px-6 py-4 text-gray-800">Abstract Submission Deadline</td>
-                      <td className="px-6 py-4 text-right text-gray-800">April 26th 2024</td>
+                      <td className="px-6 py-4 text-right text-gray-800">TBD</td>
                     </tr>
                     <tr>
                       <td className="px-6 py-4 text-gray-800">Conference</td>
-                      <td className="px-6 py-4 text-right text-gray-800">May 16th - May 17th 2024</td>
+                      <td className="px-6 py-4 text-right text-gray-800">June 1st - June 3rd 2025</td>
                     </tr>
                   </tbody>
                 </table>
@@ -86,7 +86,7 @@ const RegisterPage = () => {
               <h2 className="text-3xl font-bold mb-6">Abstract Submission</h2>
               <div className="bg-gray-50 rounded-xl p-8">
                 <p className="text-gray-700 text-lg mb-6">
-                  Abstract submission is now closed
+                  Abstract submission will open soon!
                 </p>
               </div>
             </motion.div>
@@ -105,10 +105,12 @@ const RegisterPage = () => {
               <h2 className="text-3xl font-bold mb-6">Accommodation</h2>
               <div className="bg-white rounded-xl p-8 shadow-md">
                 <p className="text-gray-700 text-lg mb-6">
-                  Attendees can reserve their stay on UBC campus{' '}
+                  More info soon!
+                  
+                  {/* Attendees can reserve their stay on UofT campus{' '}
                   <a href="#" className="text-blue-600 hover:text-blue-700 underline">here</a>.
                   Rooms on campus fill up faster during this season, so we recommend reserving your
-                  accommodation as soon as you register.
+                  accommodation as soon as you register. */}
                 </p>
               </div>
             </motion.div>

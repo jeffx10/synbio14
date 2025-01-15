@@ -8,8 +8,8 @@
 export const CONFERENCE_INFO = {
     name: 'SynBio 7.0',
     dates: {
-      start: 'Jan 15',
-      end: 'Jan 16'
+      start: 'June 1',
+      end: 'June 3'
     },
     venue: {
       name: 'University of Toronto',

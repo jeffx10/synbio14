@@ -41,6 +41,15 @@ const Hero: React.FC<HeroProps> = ({ className, backgroundImage }) => {
           <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/100">
             {CONFERENCE_INFO.name}
           </h1>
+          {/* <div className="flex justify-center">
+            <img
+              src="/images/logo_text.png"
+              alt={CONFERENCE_INFO.name}
+              className="h-48 md:h-72 w-auto"
+              loading="eager"
+            />
+          </div> */}
+
           
           <p className="text-xl md:text-2xl mb-4 text-white/100">
             {CONFERENCE_INFO.description}
