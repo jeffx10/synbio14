@@ -2,8 +2,13 @@
 const nextConfig = {
     // output: "export",
     eslint: {
-        ignoreDuringBuilds: true, // Ignore ESLint errors during builds
+        ignoreDuringBuilds: true,
       },
+    // output: 'export',
+    // basePath: '/temp',
+    // images: {
+    //     unoptimized: true,
+    // }
 };
 
 export default nextConfig;

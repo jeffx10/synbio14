@@ -65,7 +65,7 @@ const Speakers: React.FC = () => {
         )}
         
         <motion.a
-          href={`${process.env.NEXT_PUBLIC_REGISTRATION_URL}/present`}
+          href="/register"
           className="bg-white text-gray-900 px-8 py-3 rounded-full font-semibold text-center w-full sm:w-auto
                    border-2 border-gray-900 hover:bg-gray-100 transition-colors shadow-md"
           whileHover={{ scale: 1.05 }}

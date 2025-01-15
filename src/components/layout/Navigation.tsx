@@ -4,15 +4,42 @@
 * Handles site navigation and implements sticky header behavior.
 */
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { NAV_ITEMS } from '@/utils/constants'
+import { scrollToSection, useScrollPosition } from '@/utils/scroll'
+import { useRouter } from 'next/router'
 
 const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const scrollPosition = useScrollPosition()
+  const [isScrolled, setIsScrolled] = useState(false)
+  const router = useRouter()
+
+  useEffect(() => {
+    setIsScrolled(scrollPosition > 50);
+  }, [scrollPosition]);
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+
+    // Check if on the home page
+    if (router.pathname === '/') {
+      scrollToSection(href);
+    } else {
+      if (href === '#home') {
+        router.push('/');
+      } else {
+        router.push(`/${href}`);
+      }
+    }
+    setIsOpen(false);
+  };
 
   return (
-    <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-200">
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-white/90 backdrop-blur-sm shadow-md' : 'bg-transparent'
+    }`}>
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -20,13 +47,20 @@ const Navigation: React.FC = () => {
             SynBio 7.0
           </a> */}
 
-          <a href="#" className="flex items-center">
+          <a href="/" className="flex items-center">
             <img 
-              src="/images/logo.jpg" 
+              src="/images/logo_DNA.png" 
               alt="SynBio 7.0 Logo" 
               className="h-12 w-auto"
               loading="eager"
             />
+            <img 
+              src="/images/logo_text.png" 
+              alt="SynBio 7.0 Logo" 
+              className="h-24 w-auto"
+              loading="eager"
+            />
+
           </a>
 
           {/* Desktop Navigation */}

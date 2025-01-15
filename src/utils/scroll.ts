@@ -3,21 +3,45 @@
 * Description: Scroll handling utilities for smooth navigation.
 * Manages smooth scrolling behavior and scroll-based animations.
 */
+import React from 'react'
 
-interface ScrollToOptions {
-    offset?: number
-    behavior?: ScrollBehavior
-  }
+interface ScrollToSectionOptions {
+  offset?: number;
+  behavior?: ScrollBehavior;
+}
+
+export const scrollToSection = (sectionId: string, options: ScrollToSectionOptions = {}) => {
+  const { offset = 80, behavior = 'smooth' } = options;
   
-  export const scrollToSection = (id: string, options: ScrollToOptions = {}) => {
-    // TODO: Implement smooth scroll
-    // TODO: Add offset calculations
-    // TODO: Handle mobile navigation
-  }
+  // Remove the '#' if it exists in the sectionId
+  const targetId = sectionId.replace('#', '');
+  const element = document.getElementById(targetId);
   
-  export const useScrollPosition = () => {
-    // TODO: Implement scroll position tracking
-    // TODO: Add scroll direction detection
-    // TODO: Add scroll-based animations
+  if (element) {
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: behavior
+    });
   }
+};
+
+// Hook to get current scroll position
+export const useScrollPosition = () => {
+  const [scrollPosition, setScrollPosition] = React.useState(0);
   
+  React.useEffect(() => {
+    const updatePosition = () => {
+      setScrollPosition(window.pageYOffset);
+    };
+    
+    window.addEventListener('scroll', updatePosition);
+    updatePosition();
+    
+    return () => window.removeEventListener('scroll', updatePosition);
+  }, []);
+  
+  return scrollPosition;
+};

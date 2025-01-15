@@ -9,7 +9,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, useAnimation, AnimatePresence } from 'framer-motion';
 import { sponsors } from '@/data/sponsors';
 import { SponsorTier } from '@/types/sponsor';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const tierConfig = {
   platinum: { height: 'h-32', width: 'w-48' },

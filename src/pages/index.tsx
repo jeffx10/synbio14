@@ -13,6 +13,7 @@ import Speakers from '@/components/sections/Speakers';
 import Schedule from '@/components/sections/Schedule';
 import Registration from '@/components/sections/Registration';
 import Sponsors from '@/components/sections/Sponsors';
+import About from '@/components/sections/About';
 
 const fadeInUp: Variants = {
   initial: {
@@ -36,6 +37,7 @@ export default function Home() {
       <main className="relative">
         {/* Hero Section */}
         <motion.div
+          id = "home"
           initial="initial"
           animate="animate"
           variants={fadeInUp}
@@ -46,8 +48,18 @@ export default function Home() {
           />
         </motion.div>
 
+        {/* About Section */}
+        <motion.div
+          initial="initial"
+          animate="animate"
+          variants={fadeInUp}
+        >
+          <About/>
+        </motion.div>
+
         {/* Speakers Section */}
         <motion.section
+          id  = "people"
           className="py-24 bg-gray-50"
           initial="initial"
           whileInView="animate"
@@ -55,13 +67,14 @@ export default function Home() {
           variants={fadeInUp}
         >
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-16">Featured Speakers</h2>
+            <h2 className="text-4xl font-bold text-center mb-16">Keynote Speakers</h2>
             <Speakers />
           </div>
         </motion.section>
 
         {/* Schedule Section */}
         <motion.section
+          id = "schedule"
           className="py-24"
           initial="initial"
           whileInView="animate"
@@ -76,6 +89,7 @@ export default function Home() {
 
         {/* Registration Section */}
         <motion.section
+          id = "register"
           className="py-24 bg-gradient-to-r from-blue-600 to-indigo-700 text-white"
           initial="initial"
           whileInView="animate"
@@ -90,6 +104,7 @@ export default function Home() {
 
         {/* Sponsors Section */}
         <motion.section
+          id = "sponsors"
           className="py-24 bg-gray-50"
           initial="initial"
           whileInView="animate"

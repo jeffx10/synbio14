@@ -61,7 +61,7 @@ const Registration: React.FC = () => {
             </ul>
 
             <motion.a
-              href={REGISTRATION.attendee}
+              href="/register"
               className="inline-flex items-center justify-center w-full sm:w-auto gap-2 bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors text-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -111,7 +111,7 @@ const Registration: React.FC = () => {
             </ul>
 
             <motion.a
-              href={REGISTRATION.presenter}
+              href="/register"
               className="inline-flex items-center justify-center w-full sm:w-auto gap-2 bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors text-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
