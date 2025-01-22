@@ -71,12 +71,12 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <div className="container mx-auto px-6 max-w-7x1">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 mb-12">
           {/* Brand Section */}
-          <div>
-            <h2 className="text-2xl font-bold mb-4">{CONFERENCE_INFO.name}</h2>
-            <p className="text-gray-400 mb-6">
+          <div className="space-y-4">
+            <h2 className="text-2xl font-bold">{CONFERENCE_INFO.name}</h2>
+            <p className="text-gray-400">
               {CONFERENCE_INFO.description}
             </p>
             <div className="flex space-x-4">

@@ -24,9 +24,14 @@ const RegisterPage = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Registration</h1>
-              <p className="text-xl text-white/90">
+              {/* <p className="text-xl text-white/90">
                 Join us for SynBio 7.0 by securing your spot today. The registration fee of 210 CAD
                 provides you with full access to the conference sessions, materials, networking and meals.
+              </p> */}
+              <p className="text-xl text-white/90">
+                We want to make SynBio 7.0 accessible to everyone, especially students and trainees. 
+                Registration fees and details will be posted here soon! 
+                {/* Your registration will include full access to conference sessions, networking events, conference materials, and meals. */}
               </p>
             </motion.div>
           </div>

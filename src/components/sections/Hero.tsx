@@ -7,6 +7,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CONFERENCE_INFO } from '@/utils/constants';
+import Link from 'next/link';
 
 interface HeroProps {
   className?: string;
@@ -59,16 +60,19 @@ const Hero: React.FC<HeroProps> = ({ className, backgroundImage }) => {
             <p className="mb-2">{CONFERENCE_INFO.venue.name}</p>
             <p>{CONFERENCE_INFO.dates.start} - {CONFERENCE_INFO.dates.end}</p>
           </div>
-
-          <motion.button
-            className="bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-semibold 
-                     hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl
-                     transform hover:-translate-y-1"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Register Now
-          </motion.button>
+          
+          <Link href="/register" passHref>
+            <motion.button
+              className="bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-semibold 
+                      hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl
+                      transform hover:-translate-y-1"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Register Now
+            </motion.button>
+          
+          </Link>
         </motion.div>
       </div>
     </section>

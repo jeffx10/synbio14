@@ -11,8 +11,8 @@ import ScheduleTab from '@/components/shared/ScheduleTab';
 import { DayOfConference } from '@/types/schedule';
 
 const Schedule: React.FC = () => {
-  const [activeDay, setActiveDay] = useState<DayOfConference>('Friday');
-  const days: DayOfConference[] = ['Friday', 'Saturday'];
+  const [activeDay, setActiveDay] = useState<DayOfConference>('Monday');
+  const days: DayOfConference[] = ['Monday', 'Tuesday'];
 
   return (
     <div className="max-w-6xl mx-auto px-4">

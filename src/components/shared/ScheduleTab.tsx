@@ -1,13 +1,12 @@
 /*
 * File: src/components/shared/ScheduleTab.tsx
-* Description: Tab component for schedule section.
-* Handles individual day schedule display and transitions.
+* Description: Tab component for schedule section with expand/collapse functionality.
 */
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ScheduleItem } from '@/types/schedule';
-import { MapPin, Clock } from 'lucide-react';
+import { MapPin, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 
 interface ScheduleTabProps {
   day: string;
@@ -16,7 +15,10 @@ interface ScheduleTabProps {
 }
 
 const ScheduleTab: React.FC<ScheduleTabProps> = ({ day, items, isActive }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
   if (!isActive) return null;
+
+  const displayedItems = isExpanded ? items : items.slice(0, 4);
 
   return (
     <AnimatePresence mode="wait">
@@ -28,7 +30,7 @@ const ScheduleTab: React.FC<ScheduleTabProps> = ({ day, items, isActive }) => {
         transition={{ duration: 0.3 }}
         className="space-y-4"
       >
-        {items.map((item) => (
+        {displayedItems && displayedItems.length > 0 ? displayedItems.map((item) => (
           <motion.div
             key={item.id}
             className="bg-white rounded-lg shadow-md p-6"
@@ -69,7 +71,33 @@ const ScheduleTab: React.FC<ScheduleTabProps> = ({ day, items, isActive }) => {
               </div>
             </div>
           </motion.div>
-        ))}
+        )) : (
+          <div className="text-center text-gray-500">
+            No events scheduled for this day
+          </div>
+        )}
+
+        {/* Show More/Less Button */}
+        {items.length > 4 && (
+          <motion.button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="w-full mt-4 py-3 px-4 bg-gray-50 text-gray-700 rounded-lg 
+                     flex items-center justify-center gap-2 hover:bg-gray-100 
+                     transition-colors duration-200"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            {isExpanded ? (
+              <>
+                Show Less <ChevronUp size={20} />
+              </>
+            ) : (
+              <>
+                Show More ({items.length - 4} events) <ChevronDown size={20} />
+              </>
+            )}
+          </motion.button>
+        )}
       </motion.div>
     </AnimatePresence>
   );

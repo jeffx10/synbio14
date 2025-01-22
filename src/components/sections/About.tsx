@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, MapPin, Users } from 'lucide-react';
-import { CONFERENCE_INFO } from '@/utils/constants';
 
 const About: React.FC = () => {
   const highlights = [
@@ -13,17 +12,17 @@ const About: React.FC = () => {
     {
       icon: <Users className="w-6 h-6" />,
       title: "Community Focused",
-      description: "Connect with top researchers, industry leaders, and students in synthetic biology"
+      description: "Connect with top researchers and industry leaders in synthetic biology across Canada"
     },
+    {
+        icon: <MapPin className="w-6 h-6" />,
+        title: "University of Toronto",
+        description: "Held at Canada's leading academic institution in the heart of downtown Toronto."
+      },
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Opening Social",
       description: "Network and connect with peers during our June 1st evening social event"
-    },
-    {
-      icon: <MapPin className="w-6 h-6" />,
-      title: "Prime Location",
-      description: "Hosted at the University of Toronto in the heart of Canada's largest city"
     }
   ];
 
@@ -62,7 +61,7 @@ const About: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 * index }}
-              className="bg-gray-50 rounded-xl p-6 text-center hover:bg-gray-100 transition-colors"
+              className="bg-gray-50 rounded-xl p-6 text-center"
             >
               <div className="inline-flex items-center justify-center w-12 h-12 mb-4 bg-blue-100 text-blue-600 rounded-full">
                 {item.icon}

@@ -4,7 +4,7 @@
 * Contains interfaces and types for managing conference timeline and events.
 */
 
-export type DayOfConference = 'Friday' | 'Saturday' | 'Sunday'
+export type DayOfConference = 'Monday' | 'Tuesday' | 'Sunday'
 
 export type TimeSlot = {
   start: string
@@ -18,7 +18,7 @@ export interface ScheduleItem {
   speaker?: string
   time: TimeSlot
   location: string
-  type: 'talk' | 'workshop' | 'break' | 'registration' | 'social'
+  type: 'talk' | 'workshop' | 'break' | 'registration' | 'social' | 'keynote'
   day: DayOfConference
 }
 
