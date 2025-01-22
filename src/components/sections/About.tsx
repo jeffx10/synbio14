@@ -17,7 +17,7 @@ const About: React.FC = () => {
     {
         icon: <MapPin className="w-6 h-6" />,
         title: "University of Toronto",
-        description: "Held at Canada's leading academic institution in the heart of downtown Toronto."
+        description: "Held at Canada's leading academic institution in the heart of Toronto."
       },
     {
       icon: <Clock className="w-6 h-6" />,
