@@ -11,6 +11,8 @@ const Document = () => {
   return (
     <Html lang="en">
       <Head>
+        {/* Google Site Verification */}
+        <meta name="google-site-verification" content="cgPjqGBl9YzJyp4VZQyyNcjB4he4mxXEfEeBVMTU5Yw" />
         {/* Basic favicon */}
         <link rel="icon" href="/favicon.png" />
         {/* Alternative PNG favicon */}
