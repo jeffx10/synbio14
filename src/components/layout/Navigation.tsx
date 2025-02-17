@@ -50,7 +50,7 @@ const Navigation: React.FC = () => {
           <a href="/" className="flex items-center">
             <img 
               src="/images/logo_DNA.png" 
-              alt="SynBio 7.0 Logo" 
+              alt="DNA Helix Icon" 
               className="h-12 w-auto"
               loading="eager"
             />

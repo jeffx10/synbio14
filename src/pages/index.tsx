@@ -14,6 +14,7 @@ import Schedule from '@/components/sections/Schedule';
 import Registration from '@/components/sections/Registration';
 import Sponsors from '@/components/sections/Sponsors';
 import About from '@/components/sections/About';
+import Head from 'next/head';
 
 const fadeInUp: Variants = {
   initial: {
@@ -31,94 +32,100 @@ const fadeInUp: Variants = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
+    <>
+      <Head>
+        <title>SynBio7.0 - Canada's Premier Synthetic Biology Conference</title>
+      </Head>
       
-      <main className="relative">
-        {/* Hero Section */}
-        <motion.div
-          id = "home"
-          initial="initial"
-          animate="animate"
-          variants={fadeInUp}
-        >
-          <Hero 
-            className="relative h-screen flex items-center justify-center"
-            backgroundImage="/images/uoft_campus_2.jpg"
-          />
-        </motion.div>
+      <div className="min-h-screen bg-white">
+        <Navigation />
+        
+        <main className="relative">
+          {/* Hero Section */}
+          <motion.div
+            id = "home"
+            initial="initial"
+            animate="animate"
+            variants={fadeInUp}
+          >
+            <Hero 
+              className="relative h-screen flex items-center justify-center"
+              backgroundImage="/images/uoft_campus_2.jpg"
+            />
+          </motion.div>
 
-        {/* About Section */}
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={fadeInUp}
-        >
-          <About/>
-        </motion.div>
+          {/* About Section */}
+          <motion.div
+            initial="initial"
+            animate="animate"
+            variants={fadeInUp}
+          >
+            <About/>
+          </motion.div>
 
-        {/* Speakers Section */}
-        <motion.section
-          id  = "people"
-          className="py-24 bg-gray-50"
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-        >
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-16">Keynote Speakers</h2>
-            <Speakers />
-          </div>
-        </motion.section>
+          {/* Speakers Section */}
+          <motion.section
+            id  = "people"
+            className="py-24 bg-gray-50"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <div className="container mx-auto px-4">
+              <h2 className="text-4xl font-bold text-center mb-16">Keynote Speakers</h2>
+              <Speakers />
+            </div>
+          </motion.section>
 
-        {/* Schedule Section */}
-        <motion.section
-          id = "schedule"
-          className="py-24"
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-        >
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-16">Conference Schedule</h2>
-            <Schedule />
-          </div>
-        </motion.section>
+          {/* Schedule Section */}
+          <motion.section
+            id = "schedule"
+            className="py-24"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <div className="container mx-auto px-4">
+              <h2 className="text-4xl font-bold text-center mb-16">Conference Schedule</h2>
+              <Schedule />
+            </div>
+          </motion.section>
 
-        {/* Registration Section */}
-        <motion.section
-          id = "register"
-          className="py-24 bg-gradient-to-r from-blue-600 to-indigo-700 text-white"
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-        >
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-16">Join Us at SynBio 7.0</h2>
-            <Registration />
-          </div>
-        </motion.section>
+          {/* Registration Section */}
+          <motion.section
+            id = "register"
+            className="py-24 bg-gradient-to-r from-blue-600 to-indigo-700 text-white"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <div className="container mx-auto px-4">
+              <h2 className="text-4xl font-bold text-center mb-16">Join Us at SynBio 7.0</h2>
+              <Registration />
+            </div>
+          </motion.section>
 
-        {/* Sponsors Section */}
-        <motion.section
-          id = "sponsors"
-          className="py-24 bg-gray-50"
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-        >
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-16">Our Sponsors</h2>
-            <Sponsors />
-          </div>
-        </motion.section>
-      </main>
+          {/* Sponsors Section */}
+          <motion.section
+            id = "sponsors"
+            className="py-24 bg-gray-50"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <div className="container mx-auto px-4">
+              <h2 className="text-4xl font-bold text-center mb-16">Our Sponsors</h2>
+              <Sponsors />
+            </div>
+          </motion.section>
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }
