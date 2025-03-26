@@ -104,7 +104,7 @@ const RegisterPage = () => {
             </div>
           </section>
 
-          {/* Accommodation Section */}
+          {/* Accommodation Section*/}
           <section className="py-16 bg-gray-50">
             <div className="container mx-auto px-4">
               <motion.div
@@ -115,7 +115,7 @@ const RegisterPage = () => {
               >
                 <h2 className="text-3xl font-bold mb-6">Accommodations</h2>
                 <div className="space-y-8">
-                  {/* Chestnut Residence Option */}
+                  {/* Chestnut Residence Option*/}
                   <div className="bg-white rounded-xl p-8 shadow-md">
                     <div className="flex items-start gap-4">
                       <div className="rounded-full bg-blue-100 p-3 flex-shrink-0">
@@ -124,9 +124,7 @@ const RegisterPage = () => {
                       <div>
                         <h3 className="text-xl font-bold text-gray-900 mb-2">Chestnut Residence</h3>
                         <p className="text-gray-700 mb-4">
-                          We're happy to accommodate a Courtesy Block for SynBio 7.0 Conference attendees. 
-                          Conveniently situated in downtown Toronto near the Eaton Centre, Chestnut Residence 
-                          offers easy access to the heart of the city.
+                          We've arranged a special group rate at Chestnut Residence for SynBio 7.0 attendees. Located in downtown Toronto near the Eaton Centre, Chestnut Residence offers convenient access to the University of Toronto and the city center.
                         </p>
                         
                         {/* Room types */}
@@ -144,7 +142,7 @@ const RegisterPage = () => {
                             {/* Double Room */}
                             <div className="bg-gray-50 p-4 rounded-lg">
                               <h5 className="font-medium text-blue-700">Double Room</h5>
-                              <p className="text-gray-600 mb-2">2 double-sized beds with private bathroom (maximum 2 people)</p>
+                              <p className="text-gray-600 mb-2">2 double-sized beds with private bathroom</p>
                               <p className="font-medium">$192 CAD double occupancy</p>
                               <p className="text-sm text-gray-500">(2 people, per room per night + 13% HST, max 2 adults & 2 children, $10 for additional child)</p>
                             </div>
@@ -156,26 +154,51 @@ const RegisterPage = () => {
                           <Info className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
                           <div className="text-sm text-gray-700">
                             <p className="mb-1">All rates include breakfast and are in Canadian dollars with 13% tax applicable.</p>
-                            <p className="text-xs">* Monthly room rate of 30+ nights are tax exempt (Meals are taxable)</p>
+                            <p>Rooms do not have televisions or telephones.</p>
+                            <p className="font-medium mt-2">Special rates available until April 18, 2025 (45 days prior to arrival).</p>
                           </div>
                         </div>
                         
+                        {/* Amenities */}
+                        <div className="mb-6">
+                          <h4 className="font-semibold mb-2 text-gray-800">Included Amenities:</h4>
+                          <ul className="text-gray-600 list-disc pl-5 space-y-1">
+                            <li>Breakfast: Served daily from 7:30 AM to 10:30 AM</li>
+                            <li>Complimentary Wi-Fi access</li>
+                            <li>Weekly housekeeping service for extended stays</li>
+                          </ul>
+                        </div>
+                        
+                        {/* Front desk hours and check-in/out times */}
+                        <div className="bg-gray-50 p-4 rounded-lg mb-6">
+                          <h4 className="font-semibold mb-2 text-gray-800">General Information:</h4>
+                          <ul className="text-gray-600 space-y-1">
+                            <li>Front Desk Hours: 7:00 AM to 11:00 PM</li>
+                            <li>Check-In: 4:00 PM</li>
+                            <li>Check-Out: 11:00 AM</li>
+                          </ul>
+                        </div>
 
+                        {/* Booking button*/}
                         <div className="mt-4">
-                          <button 
-                            disabled
-                            className="inline-flex items-center gap-2 bg-gray-400 text-white px-6 py-3 rounded-lg cursor-not-allowed"
+                          <a 
+                            href="https://hotels.cloudbeds.com/reservation/Qv9tew#promo=Synbio"
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                           >
-                            Booking Coming Soon
-                            <Info className="w-4 h-4" />
-                          </button>
-                          <p className="text-sm text-gray-500 mt-2">We're finalizing accommodation arrangements. Check back later for booking options.</p>
+                            Book with Promo Code: Synbio
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
+                          <p className="text-sm text-gray-600 mt-2">
+                            Use promo code <span className="font-semibold">Synbio</span> to access our special conference rates.
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
                   
-                  {/* New College Residence Option */}
+                  {/* New College Residence Option - KEPT AS IS */}
                   <div className="bg-white rounded-xl p-8 shadow-md">
                     <div className="flex items-start gap-4">
                       <div className="rounded-full bg-blue-100 p-3 flex-shrink-0">
@@ -206,6 +229,7 @@ const RegisterPage = () => {
               </motion.div>
             </div>
           </section>
+          {/* ACCOMMODATION SECTION ENDS HERE */}
 
           {/* Cancellation Policy Section */}
           <section className="py-16">
