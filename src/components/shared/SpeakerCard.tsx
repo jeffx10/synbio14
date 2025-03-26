@@ -17,12 +17,11 @@ interface SpeakerCardProps {
 const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker }) => {
   return (
     <motion.div
-      className="bg-white rounded-xl shadow-lg overflow-hidden"
+      className="bg-white rounded-xl shadow-lg overflow-hidden h-full w-full mx-auto"
       whileHover={{ y: -5 }}
       transition={{ duration: 0.2 }}
     >
-      {/* Speaker Image */}
-      <div className="relative h-64 overflow-hidden">
+      <div className="relative h-48 overflow-hidden">
         <img
           src={speaker.imageUrl || '/images/speakers/placeholder-speaker.jpg'}
           alt={speaker.name}
@@ -31,21 +30,21 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker }) => {
       </div>
 
       {/* Speaker Info */}
-      <div className="p-6">
-        <h3 className="text-xl font-bold text-gray-900 mb-1">{speaker.name}</h3>
-        <p className="text-sm text-gray-600 mb-2">{speaker.title}</p>
-        <p className="text-sm text-gray-500 mb-4">{speaker.organization}</p>
+      <div className="p-4">
+        <h3 className="text-lg font-bold text-gray-900 mb-1">{speaker.name}</h3>
+        <p className="text-sm text-gray-600 mb-1">{speaker.title}</p>
+        <p className="text-sm text-gray-500 mb-3">{speaker.organization}</p>
         
         {speaker.talkTitle && (
-          <div className="mb-4">
-            <h4 className="text-sm font-semibold text-gray-700 mb-1">Presentation</h4>
+          <div className="mb-3">
+            <h4 className="text-sm font-semibold text-gray-700 mb-1">Research Focus</h4>
             <p className="text-sm text-gray-600">{speaker.talkTitle}</p>
           </div>
         )}
 
         {/* Social Links */}
         {speaker.socialMedia && (
-          <div className="flex gap-3 mt-4">
+          <div className="flex gap-3 mt-3">
             {speaker.socialMedia.twitter && (
               <a
                 href={speaker.socialMedia.twitter}
@@ -53,7 +52,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker }) => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors"
               >
-                <Twitter size={18} />
+                <Twitter size={16} />
               </a>
             )}
             {speaker.socialMedia.linkedin && (
@@ -63,7 +62,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker }) => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-600 transition-colors"
               >
-                <Linkedin size={18} />
+                <Linkedin size={16} />
               </a>
             )}
             {speaker.socialMedia.website && (
@@ -73,7 +72,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker }) => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-600 transition-colors"
               >
-                <Globe size={18} />
+                <Globe size={16} />
               </a>
             )}
           </div>

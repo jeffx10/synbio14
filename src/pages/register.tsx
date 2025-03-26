@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { MapPin, ExternalLink, Info } from 'lucide-react';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import Head from'next/head';
@@ -112,16 +113,95 @@ const RegisterPage = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="max-w-3xl mx-auto"
               >
-                <h2 className="text-3xl font-bold mb-6">Accommodation</h2>
-                <div className="bg-white rounded-xl p-8 shadow-md">
-                  <p className="text-gray-700 text-lg mb-6">
-                    More info soon!
-                    
-                    {/* Attendees can reserve their stay on UofT campus{' '}
-                    <a href="#" className="text-blue-600 hover:text-blue-700 underline">here</a>.
-                    Rooms on campus fill up faster during this season, so we recommend reserving your
-                    accommodation as soon as you register. */}
-                  </p>
+                <h2 className="text-3xl font-bold mb-6">Accommodations</h2>
+                <div className="space-y-8">
+                  {/* Chestnut Residence Option */}
+                  <div className="bg-white rounded-xl p-8 shadow-md">
+                    <div className="flex items-start gap-4">
+                      <div className="rounded-full bg-blue-100 p-3 flex-shrink-0">
+                        <MapPin className="h-6 w-6 text-blue-600" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-gray-900 mb-2">Chestnut Residence</h3>
+                        <p className="text-gray-700 mb-4">
+                          We're happy to accommodate a Courtesy Block for SynBio 7.0 Conference attendees. 
+                          Conveniently situated in downtown Toronto near the Eaton Centre, Chestnut Residence 
+                          offers easy access to the heart of the city.
+                        </p>
+                        
+                        {/* Room types */}
+                        <div className="mb-6">
+                          <h4 className="font-semibold mb-3 text-gray-800">Room Types:</h4>
+                          <div className="space-y-4">
+                            {/* Single Room */}
+                            <div className="bg-gray-50 p-4 rounded-lg">
+                              <h5 className="font-medium text-blue-700">Single Room</h5>
+                              <p className="text-gray-600 mb-2">1 double-sized bed with private bathroom</p>
+                              <p className="font-medium">$170 CAD single occupancy</p>
+                              <p className="text-sm text-gray-500">(1 person, per room per night + 13% HST, max 2 adults, $20 for additional adult)</p>
+                            </div>
+                            
+                            {/* Double Room */}
+                            <div className="bg-gray-50 p-4 rounded-lg">
+                              <h5 className="font-medium text-blue-700">Double Room</h5>
+                              <p className="text-gray-600 mb-2">2 double-sized beds with private bathroom (maximum 2 people)</p>
+                              <p className="font-medium">$192 CAD double occupancy</p>
+                              <p className="text-sm text-gray-500">(2 people, per room per night + 13% HST, max 2 adults & 2 children, $10 for additional child)</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        {/* Additional info */}
+                        <div className="bg-blue-50 p-4 rounded-lg mb-6 flex items-start gap-3">
+                          <Info className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                          <div className="text-sm text-gray-700">
+                            <p className="mb-1">All rates include breakfast and are in Canadian dollars with 13% tax applicable.</p>
+                            <p className="text-xs">* Monthly room rate of 30+ nights are tax exempt (Meals are taxable)</p>
+                          </div>
+                        </div>
+                        
+
+                        <div className="mt-4">
+                          <button 
+                            disabled
+                            className="inline-flex items-center gap-2 bg-gray-400 text-white px-6 py-3 rounded-lg cursor-not-allowed"
+                          >
+                            Booking Coming Soon
+                            <Info className="w-4 h-4" />
+                          </button>
+                          <p className="text-sm text-gray-500 mt-2">We're finalizing accommodation arrangements. Check back later for booking options.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* New College Residence Option */}
+                  <div className="bg-white rounded-xl p-8 shadow-md">
+                    <div className="flex items-start gap-4">
+                      <div className="rounded-full bg-blue-100 p-3 flex-shrink-0">
+                        <MapPin className="h-6 w-6 text-blue-600" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-gray-900 mb-2">New College Residence</h3>
+                        <p className="text-gray-700 mb-4">
+                          New College residence has rooms available on a first-come, first-serve basis. 
+                          Located at the University of Toronto campus, this is another convenient option for conference attendees.
+                        </p>
+                        
+                        <div className="mt-4">
+                          <a 
+                            href="https://utoronto.starrezhousing.com/StarRezPortalXNCSummer/0FE9F831/17/366/Home-University_of_Toront?UrlToken=C23E3B6A"
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                          >
+                            Book Directly
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
             </div>

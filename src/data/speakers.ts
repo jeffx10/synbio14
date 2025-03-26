@@ -12,29 +12,38 @@ import { Speaker } from '@/types/speaker'
 export const speakers: Speaker[] = [
   {
     id: '1',
-    name: 'Dr. Jane Smith',
-    title: 'Professor of Synthetic Biology',
-    organization: 'University of Toronto',
-    imageUrl: '/images/speaker-1.jpg',
+    name: 'Dr. Nika Shabika',
+    title: 'Assistant Professor',
+    organization: 'University of British Columbia',
+    imageUrl: '/images/Nika_Shabika.avif',
     bio: 'Leading researcher in synthetic biology and genetic engineering.',
-    talkTitle: 'The Future of Synthetic Biology'
+    talkTitle: 'Stem cell fitness engineering'
   },
   {
     id: '2',
-    name: 'Dr. Michael Garton',
-    title: 'Professor of Genetics',
-    organization: 'MIT',
-    imageUrl: '/images/speaker-2.jpg',
+    name: 'Dr. Kevin Solomon',
+    title: 'Associate Professor',
+    organization: 'University of Delaware',
+    imageUrl: '/images/Kevin_Solomon.avif',
     bio: 'Leading researcher in synthetic biology and genetic engineering.',
-    talkTitle: 'The Future of Synthetic Biology'
+    talkTitle: 'Microbial systems engineering'
   },
   {
     id: '3',
-    name: 'Dr. Joe Biden',
-    title: 'Professor of Math',
-    organization: 'Harvard University',
-    imageUrl: '/images/speaker-3.jpg',
+    name: 'Dr. Benjamin Scott',
+    title: 'Vice Chair at SynBio Canada',
+    organization: 'University of Toronto',
+    imageUrl: '/images/Benjamin_Scott.avif',
     bio: 'Leading researcher in synthetic biology and genetic engineering.',
-    talkTitle: 'The Future of Synthetic Biology'
-  }
+    talkTitle: 'Automated biotech for agriculture'
+  },
+  {
+    id: '4',
+    name: 'Dr. Adam Damry',
+    title: 'Assistant Professor',
+    organization: 'University of Ottawa',
+    imageUrl: '/images/Adam_Damry.avif',
+    bio: 'Leading researcher in synthetic biology and genetic engineering.',
+    talkTitle: 'Protein-solid interface engineering'
+  } 
 ]
