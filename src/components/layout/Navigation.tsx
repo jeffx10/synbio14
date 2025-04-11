@@ -38,7 +38,7 @@ const Navigation: React.FC = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/90 backdrop-blur-sm shadow-md' : 'bg-transparent'
+      isScrolled || isOpen ? 'bg-white/90 backdrop-blur-sm shadow-md' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">

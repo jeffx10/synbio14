@@ -6,7 +6,7 @@
 
 // Conference information
 export const CONFERENCE_INFO = {
-  name: 'SynBio 7.0',
+  name: 'SynBio7.0 and Bioengineering',
   dates: {
     start: 'June 1',
     end: 'June 3'

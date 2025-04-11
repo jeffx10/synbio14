@@ -32,26 +32,17 @@ const Hero: React.FC<HeroProps> = ({ className, backgroundImage }) => {
       />
 
       {/* Content Overlay */}
-      <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
+      <div className="relative z-10 text-center text-white px-4 flex justify-center items-center h-full">
         <motion.div
-          className="bg-black/30 backdrop-blur-sm px-8 py-12 rounded-xl"
+          className="bg-black/30 backdrop-blur-sm px-8 py-12 rounded-xl w-full max-w-2xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/100">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
             {CONFERENCE_INFO.name}
           </h1>
-          {/* <div className="flex justify-center">
-            <img
-              src="/images/logo_text.png"
-              alt={CONFERENCE_INFO.name}
-              className="h-48 md:h-72 w-auto"
-              loading="eager"
-            />
-          </div> */}
 
-          
           <p className="text-xl md:text-2xl mb-4 text-white/100">
             {CONFERENCE_INFO.description}
           </p>
@@ -71,7 +62,6 @@ const Hero: React.FC<HeroProps> = ({ className, backgroundImage }) => {
             >
               Register Now
             </motion.button>
-          
           </Link>
         </motion.div>
       </div>
