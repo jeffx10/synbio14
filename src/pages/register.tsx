@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, ExternalLink, Info } from 'lucide-react';
+import { MapPin, ExternalLink, Info, FileText, Calendar } from 'lucide-react';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import Head from'next/head';
@@ -30,15 +30,52 @@ const RegisterPage = () => {
                 className="max-w-4xl mx-auto text-center"
               >
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">Registration</h1>
-                {/* <p className="text-xl text-white/90">
-                  Join us for SynBio 7.0 by securing your spot today. The registration fee of 210 CAD
-                  provides you with full access to the conference sessions, materials, networking and meals.
-                </p> */}
-                <p className="text-xl text-white/90">
-                  We want to make SynBio 7.0 accessible to everyone, especially students and trainees. 
-                  Registration fees and details will be posted here soon! 
-                  {/* Your registration will include full access to conference sessions, networking events, conference materials, and meals. */}
+                <p className="text-xl text-white/90 mb-4">
+                  Join us for SynBio 7.0, Canada's premier synthetic biology conference.
                 </p>
+                <div className="mt-8 max-w-2xl mx-auto">
+                  <h3 className="text-2xl font-semibold mb-8 text-center">Registration Fees</h3>
+                  
+                  <div className="flex flex-col items-center space-y-6">
+                    {/* Price cards */}
+                    <div className="flex flex-col md:flex-row justify-center gap-6 w-full">
+                      {/* Trainee Card */}
+                      <div className="bg-white/20 backdrop-blur-sm rounded-xl overflow-hidden flex-1 transform transition-transform hover:scale-105">
+                        <div className="p-6 text-center">
+                          <div className="text-3xl font-bold mb-1">$200</div>
+                          <div className="text-xl mb-4">Trainees</div>
+                          <ul className="text-white/80 text-sm space-y-2 mb-4">
+                            <li>• Undergraduate Students</li>
+                            <li>• PhD Students</li>
+                            <li>• Postdoctoral Fellows</li>
+                            <li>• Research Associates</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+                      {/* Faculty Card */}
+                      <div className="bg-white/20 backdrop-blur-sm rounded-xl overflow-hidden flex-1 transform transition-transform hover:scale-105">
+                        <div className="p-6 text-center">
+                          <div className="text-3xl font-bold mb-1">$300</div>
+                          <div className="text-xl mb-4">Faculty</div>
+                          <ul className="text-white/80 text-sm space-y-2 mb-4">
+                            <li>• Professors</li>
+                            <li>• Principal Investigators</li>
+                            <li>• Industry Professionals</li>
+                            <li>• Academic Staff</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Included Features */}
+                    <div className="bg-white/10 rounded-lg p-4 mt-6 w-full">
+                      <p className="text-center text-white/90 text-sm">
+                        All registrations include full access to conference sessions, networking events, and meals.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </motion.div>
             </div>
           </div>
@@ -67,16 +104,16 @@ const RegisterPage = () => {
                         <td className="px-6 py-4 text-right text-gray-800">Soon!</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 text-gray-800">Registration Ends</td>
-                        <td className="px-6 py-4 text-right text-gray-800">TBD</td>
+                        <td className="px-6 py-4 text-gray-800">Abstract Submission Deadline</td>
+                        <td className="px-6 py-4 text-right font-medium text-gray-800">May 2nd, 2025</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 text-gray-800">Abstract Submission Deadline</td>
+                        <td className="px-6 py-4 text-gray-800">Registration Deadline</td>
                         <td className="px-6 py-4 text-right text-gray-800">TBD</td>
                       </tr>
                       <tr>
                         <td className="px-6 py-4 text-gray-800">Conference</td>
-                        <td className="px-6 py-4 text-right text-gray-800">June 1st - June 3rd 2025</td>
+                        <td className="px-6 py-4 text-right text-gray-800">June 1st - June 3rd, 2025</td>
                       </tr>
                     </tbody>
                   </table>
@@ -86,7 +123,7 @@ const RegisterPage = () => {
           </section>
 
           {/* Abstract Submission Section */}
-          <section className="py-16">
+          <section id="abstract-submission" className="py-16">
             <div className="container mx-auto px-4">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -96,15 +133,41 @@ const RegisterPage = () => {
               >
                 <h2 className="text-3xl font-bold mb-6">Abstract Submission</h2>
                 <div className="bg-gray-50 rounded-xl p-8">
-                  <p className="text-gray-700 text-lg mb-6">
-                    Abstract submission will open soon!
-                  </p>
+                  <div className="flex items-start gap-4">
+                    <div className="rounded-full bg-blue-100 p-3 flex-shrink-0">
+                      <FileText className="h-6 w-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <p className="text-gray-700 text-lg mb-4">
+                        We invite researchers and professionals in synthetic biology to submit 
+                        abstracts for oral and poster presentations at SynBio 7.0.
+                      </p>
+                      <div className="flex items-start gap-2 mb-6 bg-amber-50 p-4 rounded-lg border border-amber-200">
+                        <Calendar className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-medium text-amber-800">Important Deadline</p>
+                          <p className="text-amber-700">All abstracts must be submitted by May 2nd, 2025.</p>
+                        </div>
+                      </div>
+                      <motion.a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScGm-rtDeBEUEDDPWbkXU-mAlxS_DY3Zl0_C0Nl11CMe3cuDA/viewform"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        Submit Your Abstract
+                        <ExternalLink className="w-4 h-4" />
+                      </motion.a>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
             </div>
           </section>
 
-          {/* Accommodation Section*/}
+          {/* Accommodation Section */}
           <section className="py-16 bg-gray-50">
             <div className="container mx-auto px-4">
               <motion.div
@@ -115,7 +178,7 @@ const RegisterPage = () => {
               >
                 <h2 className="text-3xl font-bold mb-6">Accommodations</h2>
                 <div className="space-y-8">
-                  {/* Chestnut Residence Option*/}
+                  {/* Chestnut Residence Option - UPDATED WITH NEW INFORMATION */}
                   <div className="bg-white rounded-xl p-8 shadow-md">
                     <div className="flex items-start gap-4">
                       <div className="rounded-full bg-blue-100 p-3 flex-shrink-0">
@@ -179,7 +242,7 @@ const RegisterPage = () => {
                           </ul>
                         </div>
 
-                        {/* Booking button*/}
+                        {/* Booking button - UPDATED TO ACTIVE STATE WITH CORRECT LINK */}
                         <div className="mt-4">
                           <a 
                             href="https://hotels.cloudbeds.com/reservation/Qv9tew#promo=Synbio"

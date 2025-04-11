@@ -45,7 +45,7 @@ const Registration: React.FC = () => {
               and explore the latest developments in synthetic biology.
             </p>
 
-            <ul className="space-y-3 mb-8 text-white/70">
+            <ul className="space-y-3 mb-4 text-white/70">
               <li className="flex items-center gap-2">
                 <ChevronRight className="w-4 h-4" />
                 <span>Access to all conference sessions</span>
@@ -59,6 +59,12 @@ const Registration: React.FC = () => {
                 <span>Conference materials</span>
               </li>
             </ul>
+            
+            {/* Registration costs */}
+            <div className="bg-white/10 rounded-lg p-5 mb-6">
+              <h4 className="font-semibold text-white mb-2">Registration Fees:</h4>
+              <p className="text-white/80">Trainees - <span className="font-medium text-white">$200</span> and Faculty - <span className="font-medium text-white">$300</span></p>
+            </div>
 
             <motion.a
               href="/register"
@@ -95,7 +101,7 @@ const Registration: React.FC = () => {
               Submit your presentation proposal for SynBio 7.0.
             </p>
 
-            <ul className="space-y-3 mb-8 text-white/70">
+            <ul className="space-y-3 mb-4 text-white/70">
               <li className="flex items-center gap-2">
                 <ChevronRight className="w-4 h-4" />
                 <span>20-minute presentation slot</span>
@@ -109,14 +115,20 @@ const Registration: React.FC = () => {
                 <span>Networking opportunities</span>
               </li>
             </ul>
+            
+            {/* Abstract submission deadline notice */}
+            <div className="bg-white/10 rounded-lg p-5 mb-6">
+              <h4 className="font-semibold text-white mb-2">Important:</h4>
+              <p className="text-white/80">Abstract submission deadline: <span className="font-medium text-white">May 2nd, 2025</span></p>
+            </div>
 
             <motion.a
-              href="/register"
+              href="/register#abstract-submission"
               className="inline-flex items-center justify-center w-full sm:w-auto gap-2 bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors text-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Submit Proposal
+              Submit Abstract
               <ChevronRight className="w-4 h-4" />
             </motion.a>
           </div>
