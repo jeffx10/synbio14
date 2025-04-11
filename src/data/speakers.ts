@@ -31,8 +31,8 @@ export const speakers: Speaker[] = [
   {
     id: '3',
     name: 'Dr. Benjamin Scott',
-    title: 'Vice Chair at SynBio Canada',
-    organization: 'University of Toronto',
+    title: 'Platform Lead, Engineering Biology',
+    organization: 'Global Institude for Food Security',
     imageUrl: '/images/Benjamin_Scott.avif',
     bio: 'Leading researcher in synthetic biology and genetic engineering.',
     talkTitle: 'Automated biotech for agriculture'
