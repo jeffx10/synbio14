@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>SynBio7.0 - Canada's Premier Synthetic Biology Conference</title>
+        <title>SynBio7.0 - 7th Annual Synthetic Biology and Bioengineering Conference</title>
       </Head>
       
       <div className="min-h-screen bg-white">
