@@ -12,7 +12,7 @@ import { Speaker } from '@/types/speaker'
 export const speakers: Speaker[] = [
   {
     id: '1',
-    name: 'Dr. Nika Shabika',
+    name: 'Dr. Nika Shakiba',
     title: 'Assistant Professor',
     organization: 'University of British Columbia',
     imageUrl: '/images/Nika_Shabika.avif',
