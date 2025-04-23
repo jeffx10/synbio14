@@ -41,7 +41,7 @@ const Registration: React.FC = () => {
             
             <h3 className="text-2xl font-bold mb-4">Register to Attend</h3>
             <p className="text-white/80 mb-6">
-              Join us at SynBio 7.0 to learn from industry leaders, network with peers, 
+              Join us to learn from industry leaders, network with peers, 
               and explore the latest developments in synthetic biology.
             </p>
 
