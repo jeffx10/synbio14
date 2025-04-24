@@ -98,13 +98,13 @@ const Registration: React.FC = () => {
             <h3 className="text-2xl font-bold mb-4">Register to Present</h3>
             <p className="text-white/80 mb-6">
               Share your research and insights with the synthetic biology community. 
-              Submit your presentation proposal for SynBio 7.0.
+              Submit your presentation proposal for SynBio7.0.
             </p>
 
             <ul className="space-y-3 mb-4 text-white/70">
               <li className="flex items-center gap-2">
                 <ChevronRight className="w-4 h-4" />
-                <span>20-minute presentation slot</span>
+                <span>15-minute presentation slot</span>
               </li>
               <li className="flex items-center gap-2">
                 <ChevronRight className="w-4 h-4" />

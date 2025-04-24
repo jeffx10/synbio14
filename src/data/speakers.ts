@@ -45,5 +45,14 @@ export const speakers: Speaker[] = [
     imageUrl: '/images/Adam_Damry.avif',
     bio: 'Leading researcher in synthetic biology and genetic engineering.',
     talkTitle: 'Protein-solid interface engineering'
+  } ,
+  {
+    id: '5',
+    name: 'Dr. Valerie Ward',
+    title: 'Associate Professor',
+    organization: 'University of Waterloo',
+    imageUrl: '/images/Valerie_Ward.png',
+    bio: 'Leading researcher in synthetic biology and genetic engineering.',
+    talkTitle: 'Metabolic engineering for economical biomanufacturing'
   } 
 ]

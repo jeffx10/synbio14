@@ -14,7 +14,7 @@ const RegisterPage = () => {
   return (
     <>
       <Head>
-        <title>Register - SynBio 7.0 Conference</title>
+        <title>Register - SynBio7.0 Conference</title>
       </Head>
       <div className="min-h-screen bg-white">
         <Navigation />
@@ -31,7 +31,7 @@ const RegisterPage = () => {
               >
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">Registration</h1>
                 <p className="text-xl text-white/90 mb-4">
-                  Join us for SynBio 7.0, Canada's premier synthetic biology conference.
+                  Join us for SynBio7.0, Canada's premier synthetic biology conference.
                 </p>
                 <div className="mt-8 max-w-2xl mx-auto">
                   <h3 className="text-2xl font-semibold mb-8 text-center">Registration Fees</h3>
@@ -140,7 +140,7 @@ const RegisterPage = () => {
                     <div>
                       <p className="text-gray-700 text-lg mb-4">
                         We invite researchers and professionals in synthetic biology to submit 
-                        abstracts for oral and poster presentations at SynBio 7.0.
+                        abstracts for oral and poster presentations at SynBio7.0.
                       </p>
                       <div className="flex items-start gap-2 mb-6 bg-amber-50 p-4 rounded-lg border border-amber-200">
                         <Calendar className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
@@ -187,7 +187,7 @@ const RegisterPage = () => {
                       <div>
                         <h3 className="text-xl font-bold text-gray-900 mb-2">Chestnut Residence</h3>
                         <p className="text-gray-700 mb-4">
-                          We've arranged a special group rate at Chestnut Residence for SynBio 7.0 attendees. Located in downtown Toronto near the Eaton Centre, Chestnut Residence offers convenient access to the University of Toronto and the city center.
+                          We've arranged a special group rate at Chestnut Residence for SynBio7.0 attendees. Located in downtown Toronto near the Eaton Centre, Chestnut Residence offers convenient access to the University of Toronto and the city center.
                         </p>
                         
                         {/* Room types */}

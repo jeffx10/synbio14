@@ -28,7 +28,7 @@ const Hero: React.FC<HeroProps> = ({ className, backgroundImage }) => {
         }}
         initial={{ scale: 1.1 }}
         animate={{ scale: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.2 }}
       />
 
       {/* Content Overlay */}
@@ -37,7 +37,7 @@ const Hero: React.FC<HeroProps> = ({ className, backgroundImage }) => {
           className="bg-black/30 backdrop-blur-sm px-8 py-12 rounded-xl w-full max-w-2xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
             {CONFERENCE_INFO.name}
@@ -52,17 +52,31 @@ const Hero: React.FC<HeroProps> = ({ className, backgroundImage }) => {
             <p>{CONFERENCE_INFO.dates.start} - {CONFERENCE_INFO.dates.end}</p>
           </div>
           
-          <Link href="/register" passHref>
-            <motion.button
-              className="bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-semibold 
-                      hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl
-                      transform hover:-translate-y-1"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Register Now
-            </motion.button>
-          </Link>
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
+            <Link href="/register" passHref>
+              <motion.button
+                className="bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-semibold 
+                        hover:bg-white/90 transition-all shadow-lg hover:shadow-xl
+                        transform hover:-translate-y-1"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Register Now
+              </motion.button>
+            </Link>
+
+            <Link href="/register#abstract-submission" passHref>
+              <motion.button
+                className="bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold 
+                        hover:bg-blue-900 transition-all shadow-lg hover:shadow-xl
+                        transform hover:-translate-y-1"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Submit Abstract
+              </motion.button>
+            </Link>
+          </div>
         </motion.div>
       </div>
     </section>

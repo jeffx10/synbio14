@@ -1,7 +1,5 @@
 /*
 * File: src/components/layout/Navigation.tsx
-* Description: Main navigation component with responsive mobile menu.
-* Handles site navigation and implements sticky header behavior.
 */
 
 import React, { useState, useEffect } from 'react'

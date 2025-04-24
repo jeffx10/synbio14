@@ -21,13 +21,37 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker }) => {
       whileHover={{ y: -5 }}
       transition={{ duration: 0.2 }}
     >
-      <div className="relative h-48 overflow-hidden">
-        <img
-          src={speaker.imageUrl || '/images/speakers/placeholder-speaker.jpg'}
-          alt={speaker.name}
-          className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
-        />
-      </div>
+<div className="relative h-48 overflow-hidden">
+  {speaker.name === "Dr. Valerie Ward" ? (
+    <div className="w-full h-full bg-gray-100 flex items-center justify-center">
+      <img
+        src={speaker.imageUrl}
+        alt={speaker.name}
+        className="w-auto h-[190%]" // Zoom
+        style={{ 
+          transform: "translateY(10%)"
+        }}
+      />
+    </div>
+  ) : speaker.name === "Dr. Adam Damry" ? (
+    <div className="w-full h-full bg-gray-100 flex items-center justify-center">
+      <img
+        src={speaker.imageUrl}
+        alt={speaker.name}
+        className="w-auto h-[125%]" // Zoom
+        style={{ 
+          transform: "translateY(5%)"
+        }}
+      />
+    </div>
+  ) : (
+    <img
+      src={speaker.imageUrl || '/images/speakers/placeholder-speaker.jpg'}
+      alt={speaker.name}
+      className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+    />
+  )}
+</div>
 
       {/* Speaker Info */}
       <div className="p-4">

@@ -21,11 +21,11 @@ export const CONFERENCE_INFO = {
 
 // Nav items
 export const NAV_ITEMS = [
-  { label: 'SynBio 7.0', href: '/#home' },
+  { label: 'SynBio7.0', href: '/#home' },
   { label: 'Schedule', href: '/#schedule' },
   { label: 'Speakers', href: '/#people' },
   { label: 'About', href: '/#about' },
-  { label: 'Sponsors', href: '/#sponsors' },
+  { label: 'Accomodations', href: '/accomodations' },
   { label: 'Register', href: '/register' }
 ]
 
