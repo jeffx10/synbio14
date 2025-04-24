@@ -36,7 +36,7 @@ const About: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-6">About SynBio 7.0</h2>
+          <h2 className="text-4xl font-bold mb-6">About SynBio7.0</h2>
           <p className="text-xl text-gray-600 mb-8">
             Join us for Canada's premier synthetic biology conference, bringing the research 
             community together to celebrate Canadian progress in this exciting and fast-growing field.
