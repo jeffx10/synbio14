@@ -101,11 +101,17 @@ const RegisterPage = () => {
                     <tbody className="divide-y divide-gray-200">
                       <tr>
                         <td className="px-6 py-4 text-gray-800">Registration Opens</td>
-                        <td className="px-6 py-4 text-right text-gray-800">Soon!</td>
+                        <td className="px-6 py-4 text-right text-gray-800">
+                          <a href="https://www.eventbrite.ca/e/synbio-70-tickets-1344597700919?aff=oddtdtcreator" 
+                             className="text-blue-600 hover:underline" 
+                             target="_blank" rel="noopener noreferrer">
+                            Register Now
+                          </a>
+                        </td>
                       </tr>
                       <tr>
                         <td className="px-6 py-4 text-gray-800">Abstract Submission Deadline</td>
-                        <td className="px-6 py-4 text-right font-medium text-gray-800">May 2nd, 2025</td>
+                        <td className="px-6 py-4 text-right font-medium text-gray-800">May 7th, 2025</td>
                       </tr>
                       <tr>
                         <td className="px-6 py-4 text-gray-800">Registration Deadline</td>
@@ -146,7 +152,9 @@ const RegisterPage = () => {
                         <Calendar className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
                         <div>
                           <p className="font-medium text-amber-800">Important Deadline</p>
-                          <p className="text-amber-700">All abstracts must be submitted by May 2nd, 2025.</p>
+                          <p className="text-amber-700">
+                            <span className="font-semibold">Extended deadline:</span> All abstracts must be submitted by May 7th, 2025.
+                          </p>
                         </div>
                       </div>
                       <motion.a

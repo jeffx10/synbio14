@@ -67,7 +67,9 @@ const Registration: React.FC = () => {
             </div>
 
             <motion.a
-              href="/register"
+              href="https://www.eventbrite.ca/e/synbio-70-tickets-1344597700919?aff=oddtdtcreator"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-full sm:w-auto gap-2 bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors text-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -119,7 +121,7 @@ const Registration: React.FC = () => {
             {/* Abstract submission deadline notice */}
             <div className="bg-white/10 rounded-lg p-5 mb-6">
               <h4 className="font-semibold text-white mb-2">Important:</h4>
-              <p className="text-white/80">Abstract submission deadline: <span className="font-medium text-white">May 2nd, 2025</span></p>
+              <p className="text-white/80">Abstract submission deadline: <span className="font-medium text-white">May 7th, 2025</span> <span className="bg-yellow-400 text-gray-900 text-xs px-2 py-0.5 rounded-full ml-1">Extended</span></p>
             </div>
 
             <motion.a

@@ -26,20 +26,20 @@ export const NAV_ITEMS = [
   { label: 'Speakers', href: '/#people' },
   { label: 'About', href: '/#about' },
   { label: 'Accomodations', href: '/accomodations' },
-  { label: 'Register', href: '/register' }
+  { label: 'Register', href: 'https://www.eventbrite.ca/e/synbio-70-tickets-1344597700919?aff=oddtdtcreator' }
 ]
 
 // Registration and abstract submission links
 export const REGISTRATION = {
-  attendee: '/register',
-  presenter: '/register',
+  attendee: 'https://www.eventbrite.ca/e/synbio-70-tickets-1344597700919?aff=oddtdtcreator',
+  presenter: 'https://www.eventbrite.ca/e/synbio-70-tickets-1344597700919?aff=oddtdtcreator',
   abstractSubmission: 'https://forms.gle/SynBioAbstractSubmission'
 }
 
 // Key dates
 export const KEY_DATES = {
   registrationOpens: 'March 1st, 2025',
-  abstractDeadline: 'May 2nd, 2025',
+  abstractDeadline: 'May 7th, 2025',
   registrationDeadline: 'May 15th, 2025',
   conferenceStart: 'June 1st, 2025',
   conferenceEnd: 'June 3rd, 2025'

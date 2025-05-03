@@ -53,17 +53,18 @@ const Hero: React.FC<HeroProps> = ({ className, backgroundImage }) => {
           </div>
           
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
-            <Link href="/register" passHref>
-              <motion.button
-                className="bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-semibold 
-                        hover:bg-white/90 transition-all shadow-lg hover:shadow-xl
-                        transform hover:-translate-y-1"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Register Now
-              </motion.button>
-            </Link>
+            <motion.a
+              href="https://www.eventbrite.ca/e/synbio-70-tickets-1344597700919?aff=oddtdtcreator"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-semibold 
+                      hover:bg-white/90 transition-all shadow-lg hover:shadow-xl
+                      transform hover:-translate-y-1 inline-block"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Register Now
+            </motion.a>
 
             <Link href="/register#abstract-submission" passHref>
               <motion.button
