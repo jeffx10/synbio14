@@ -6,66 +6,58 @@
 
 import { Sponsor } from '@/types/sponsor'
 
-// TODO: Add all sponsor tiers
-// TODO: Add sponsor logos
-// TODO: Add sponsor websites
 export const sponsors: Sponsor[] = [
+  // Silver sponsors
   {
-    id: '1',
-    name: 'ThermoFischer',
-    tier: 'platinum',
-    logoUrl: '/images/sponsor-1.jpg',
-    website: 'https://example.com'
-  },
-  {
-    id: '1',
-    name: 'ThermoFischer',
-    tier: 'platinum',
-    logoUrl: '/images/sponsor-1.jpg',
-    website: 'https://example.com'
-  },
-  {
-    id: '1',
-    name: 'ThermoFischer',
-    tier: 'platinum',
-    logoUrl: '/images/sponsor-1.jpg',
-    website: 'https://example.com'
-  },
-
-  // gold
-  {
-    id: '2',
+    id: 'neb',
     name: 'NEB',
-    tier: 'gold',
-    logoUrl: '/images/sponsor-2.jpg',
-    website: 'https://example.com'
+    tier: 'silver',
+    logoUrl: '/images/NEB-Logo.jpg',
+    website: 'https://www.neb.com'
   },
   {
-    id: '1',
-    name: 'ThermoFischer',
-    tier: 'gold',
-    logoUrl: '/images/sponsor-1.jpg',
-    website: 'https://example.com'
+    id: 'evident',
+    name: 'Evident',
+    tier: 'silver',
+    logoUrl: '/images/evident_logo_color_tm.jpg',
+    website: 'https://www.evidentscientific.com'
   },
   {
-    id: '2',
-    name: 'NEB',
-    tier: 'gold',
-    logoUrl: '/images/sponsor-2.jpg',
-    website: 'https://example.com'
+    id: 'cagef',
+    name: 'CAGEF',
+    tier: 'silver',
+    logoUrl: '/images/cagef_banner_new.jpg',
+    website: 'https://cagef.utoronto.ca/'
+  },
+  
+  // Bronze sponsors
+  {
+    id: 'kapoose-creek',
+    name: 'Kapoose Creek',
+    tier: 'bronze',
+    logoUrl: '/images/KapooseCreek.jpg',
+    website: 'https://kapoosecreek.com'
   },
   {
-    id: '1',
-    name: 'ThermoFischer',
-    tier: 'gold',
-    logoUrl: '/images/sponsor-1.jpg',
-    website: 'https://example.com'
+    id: 'mcb-guelph',
+    name: 'Department of Molecular and Cellular Biology',
+    tier: 'bronze',
+    logoUrl: '/images/University of Guelph DMCB.jpg',
+    website: 'https://www.uoguelph.ca/mcb'
   },
+  // No logo, no website
+  // {
+  //   id: 'sp-robotics',
+  //   name: 'SP Robotics',
+  //   tier: 'bronze',
+  //   logoUrl: '',
+  //   website: ''
+  // },
   {
-    id: '2',
-    name: 'NEB',
-    tier: 'gold',
-    logoUrl: '/images/sponsor-2.jpg',
-    website: 'https://example.com'
+    id: 'flow-genomics',
+    name: 'Flow Genomics',
+    tier: 'bronze',
+    logoUrl: '/images/FlowGenomics.png',
+    website: 'https://flowgenomics.com'
   }
 ]
