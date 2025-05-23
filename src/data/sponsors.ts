@@ -29,7 +29,13 @@ export const sponsors: Sponsor[] = [
     logoUrl: '/images/cagef_banner_new.jpg',
     website: 'https://cagef.utoronto.ca/'
   },
-  
+  {
+    id: 'ontariogenomics',
+    name: 'Ontario Genomics',
+    tier: 'silver',
+    logoUrl: '/images/OG-25_Logo-Blue.png',
+    website: 'https://www.ontariogenomics.ca/'
+  },
   // Bronze sponsors
   {
     id: 'kapoose-creek',
@@ -45,14 +51,13 @@ export const sponsors: Sponsor[] = [
     logoUrl: '/images/University of Guelph DMCB.jpg',
     website: 'https://www.uoguelph.ca/mcb'
   },
-  // No logo, no website
-  // {
-  //   id: 'sp-robotics',
-  //   name: 'SP Robotics',
-  //   tier: 'bronze',
-  //   logoUrl: '',
-  //   website: ''
-  // },
+  {
+    id: 'sp-robotics',
+    name: 'SP Robotics',
+    tier: 'bronze',
+    logoUrl: '/images/SPRobotics.jpg',
+    website: 'https://sprobotics.com/tabs.aspx'
+  },
   {
     id: 'flow-genomics',
     name: 'Flow Genomics',

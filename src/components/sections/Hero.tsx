@@ -7,7 +7,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CONFERENCE_INFO } from '@/utils/constants';
-import Link from 'next/link';
 
 interface HeroProps {
   className?: string;
@@ -52,35 +51,30 @@ const Hero: React.FC<HeroProps> = ({ className, backgroundImage }) => {
             <p>{CONFERENCE_INFO.dates.start} - {CONFERENCE_INFO.dates.end}</p>
           </div>
           
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
-            <Link
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center items-center">
+            <motion.a
               href="https://www.eventbrite.ca/e/synbio-70-tickets-1344597700919?aff=oddtdtcreator"
               target="_blank"
               rel="noopener noreferrer"
-              passHref
+              className="bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-semibold 
+                      hover:bg-white/90 transition-all shadow-lg hover:shadow-xl
+                      transform hover:-translate-y-1 inline-flex items-center justify-center"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
-              <motion.a
-                className="bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-semibold 
-                        hover:bg-white/90 transition-all shadow-lg hover:shadow-xl
-                        transform hover:-translate-y-1 inline-block"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Register Now
-              </motion.a>
-            </Link>
+              Register Now
+            </motion.a>
 
-            <Link href="/register#abstract-submission" passHref>
-              <motion.button
-                className="bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold 
-                        hover:bg-blue-900 transition-all shadow-lg hover:shadow-xl
-                        transform hover:-translate-y-1"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Submit Abstract
-              </motion.button>
-            </Link>
+            <motion.a
+              href="/register#abstract-submission"
+              className="bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold 
+                      hover:bg-blue-900 transition-all shadow-lg hover:shadow-xl
+                      transform hover:-translate-y-1 inline-flex items-center justify-center"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Submit Abstract
+            </motion.a>
           </div>
         </motion.div>
       </div>

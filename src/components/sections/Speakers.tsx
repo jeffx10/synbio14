@@ -9,8 +9,6 @@ import { motion } from 'framer-motion';
 import SpeakerCard from '@/components/shared/SpeakerCard';
 import { speakers } from '@/data/speakers';
 
-import { Mail } from 'lucide-react';
-
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {

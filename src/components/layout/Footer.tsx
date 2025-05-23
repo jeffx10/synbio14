@@ -26,7 +26,7 @@ interface FooterSection {
 }
 
 const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
+  const currentYear = 2025;
 
   // const socialLinks = [
   //   {
