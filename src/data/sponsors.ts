@@ -26,7 +26,7 @@ export const sponsors: Sponsor[] = [
     id: 'cagef',
     name: 'CAGEF',
     tier: 'silver',
-    logoUrl: '/images/cagef_banner_new.jpg',
+    logoUrl: '/images/CAGEF_new_small.png',
     website: 'https://cagef.utoronto.ca/'
   },
   {
@@ -64,5 +64,12 @@ export const sponsors: Sponsor[] = [
     tier: 'bronze',
     logoUrl: '/images/FlowGenomics.png',
     website: 'https://flowgenomics.com'
+  },
+  {
+    id: 'concordia',
+    name: 'Concordia University, Center for Applied Synthetic Biology',
+    tier: 'bronze',
+    logoUrl: '/images/CASB logo.png',
+    website: 'https://www.concordia.ca/research/casb.html'
   }
 ]

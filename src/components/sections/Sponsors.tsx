@@ -13,8 +13,8 @@ import { Mail } from 'lucide-react';
 const tierConfig = {
   platinum: { height: 'h-40', width: 'w-56' },
   gold: { height: 'h-36', width: 'w-52' }, 
-  silver: { height: 'h-32', width: 'w-48' },  
-  bronze: { height: 'h-28', width: 'w-44' }
+  silver: { height: 'h-36', width: 'w-52' },  
+  bronze: { height: 'h-32', width: 'w-48' }
 };
 
 const Sponsors: React.FC = () => {
