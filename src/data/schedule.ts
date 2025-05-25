@@ -8,229 +8,388 @@ import { ScheduleItem, DaySchedule, DayOfConference } from '@/types/schedule'
 import { speakers } from './speakers'
 
 export const schedule: Record<DayOfConference, ScheduleItem[]> = {
+  'Sunday': [
+    {
+      id: 'sun-1',
+      title: 'Social and Networking Event',
+      time: {
+        start: '18:00',
+        end: '21:00'
+      },
+      location: "Hemingway's (142 Cumberland St. Toronto)",
+      type: 'social',
+      day: 'Sunday'
+    }
+  ],
   'Monday': [
     {
-      id: '1',
+      id: 'mon-1',
       title: 'Registration',
       time: {
         start: '08:30',
         end: '09:00'
       },
-      location: 'lobby',
+      location: 'Lobby',
       type: 'registration',
       day: 'Monday'
     },
     {
-      id: '2',
+      id: 'mon-2',
       title: 'Welcome Remarks',
       time: {
         start: '09:00',
         end: '09:15'
       },
-      location: 'theater',
+      location: 'Theater',
       type: 'talk',
       day: 'Monday'
     },
     {
-      id: '3',
-      title: 'Keynote',
+      id: 'mon-3',
+      title: 'Keynote: Dr. Kevin Solomon',
+      speaker: 'Dr. Kevin Solomon',
+      chair: 'TBD',
       time: {
         start: '09:15',
         end: '10:15'
       },
-      location: 'theater',
+      location: 'Theater',
       type: 'keynote',
       day: 'Monday'
     },
     {
-      id: '4',
+      id: 'mon-4',
       title: 'Coffee Break',
       time: {
         start: '10:15',
         end: '10:45'
       },
-      location: 'lobby',
+      location: 'Lobby',
       type: 'break',
       day: 'Monday'
     },
     {
-      id: '5',
-      title: 'Keynote',
+      id: 'mon-5',
+      title: 'Rachel Gregor',
+      speaker: 'Rachel Gregor',
+      chair: 'TBD',
       time: {
         start: '10:45',
-        end: '11:45'
+        end: '11:10'
       },
-      location: 'theater',
-      type: 'keynote',
-      day: 'Monday'
-    },
-    {
-      id: '6',
-      title: 'Talks',
-      time: {
-        start: '11:45',
-        end: '13:30'
-      },
-      location: 'theater',
+      location: 'Theater',
       type: 'talk',
       day: 'Monday'
     },
     {
-      id: '7',
+      id: 'mon-6',
+      title: 'Jeff Bouffard',
+      speaker: 'Jeff Bouffard',
+      chair: 'TBD',
+      time: {
+        start: '11:10',
+        end: '11:25'
+      },
+      location: 'Theater',
+      type: 'talk',
+      day: 'Monday'
+    },
+    {
+      id: 'mon-7',
+      title: 'Harold Flohr',
+      speaker: 'Harold Flohr',
+      chair: 'TBD',
+      time: {
+        start: '11:25',
+        end: '11:40'
+      },
+      location: 'Theater',
+      type: 'talk',
+      day: 'Monday'
+    },
+    {
+      id: 'mon-8',
+      title: 'Nicholas Gervais',
+      speaker: 'Nicholas Gervais',
+      chair: 'TBD',
+      time: {
+        start: '11:40',
+        end: '11:55'
+      },
+      location: 'Theater',
+      type: 'talk',
+      day: 'Monday'
+    },
+    {
+      id: 'mon-9',
       title: 'Lunch / Poster Session',
+      time: {
+        start: '12:00',
+        end: '13:30'
+      },
+      location: 'Theater',
+      type: 'break',
+      day: 'Monday'
+    },
+    {
+      id: 'mon-10',
+      title: 'Keynote: Dr. Nika Shakiba',
+      speaker: 'Dr. Nika Shakiba',
+      chair: 'Michael Garton',
       time: {
         start: '13:30',
         end: '14:30'
       },
-      location: 'hall',
-      type: 'break',
-      day: 'Monday'
-    },
-    {
-      id: '8',
-      title: 'Keynote',
-      time: {
-        start: '14:30',
-        end: '15:30'
-      },
-      location: 'theater',
+      location: 'Theater',
       type: 'keynote',
       day: 'Monday'
     },
     {
-      id: '9',
-      title: 'Coffee Break',
+      id: 'mon-11',
+      title: 'Giulio Chiesa',
+      speaker: 'Giulio Chiesa',
+      chair: 'Michael Garton',
       time: {
-        start: '15:30',
-        end: '16:00'
+        start: '14:30',
+        end: '14:55'
       },
-      location: 'hall',
-      type: 'break',
-      day: 'Monday'
-    },
-    {
-      id: '10',
-      title: 'Talks',
-      time: {
-        start: '16:00',
-        end: '17:00'
-      },
-      location: 'theater',
+      location: 'Theater',
       type: 'talk',
       day: 'Monday'
     },
     {
-      id: '11',
+      id: 'mon-12',
+      title: 'Brittany Greco',
+      speaker: 'Brittany Greco',
+      chair: 'Michael Garton',
+      time: {
+        start: '14:55',
+        end: '15:10'
+      },
+      location: 'Theater',
+      type: 'talk',
+      day: 'Monday'
+    },
+    {
+      id: 'mon-13',
+      title: 'Roy Hwang',
+      speaker: 'Roy Hwang',
+      chair: 'Michael Garton',
+      time: {
+        start: '15:10',
+        end: '15:25'
+      },
+      location: 'Theater',
+      type: 'talk',
+      day: 'Monday'
+    },
+    {
+      id: 'mon-14',
+      title: 'Coffee Break (Posters)',
+      time: {
+        start: '15:30',
+        end: '16:00'
+      },
+      location: 'Lobby',
+      type: 'break',
+      day: 'Monday'
+    },
+    {
+      id: 'mon-15',
+      title: 'Keynote: Dr. Benjamin Scott',
+      speaker: 'Dr. Benjamin Scott',
+      time: {
+        start: '16:00',
+        end: '17:00'
+      },
+      location: 'Theater',
+      type: 'keynote',
+      day: 'Monday'
+    },
+    {
+      id: 'mon-16',
       title: 'Closing Day 1',
       time: {
         start: '17:00',
         end: '17:15'
       },
-      location: 'theater',
+      location: 'Theater',
       type: 'talk',
       day: 'Monday'
     }
   ],
   'Tuesday': [
     {
-      id: '1',
+      id: 'tue-1',
       title: 'Welcome Coffee',
       time: {
         start: '08:30',
         end: '09:00'
       },
-      location: 'lobby',
+      location: 'Lobby',
       type: 'registration',
       day: 'Tuesday'
     },
     {
-      id: '2',
-      title: 'Keynote',
+      id: 'tue-2',
+      title: 'Keynote: Dr. Valerie Ward - Bioprocessing',
+      speaker: 'Dr. Valerie Ward',
+      chair: 'Mohamed Nasr',
       time: {
         start: '09:00',
         end: '10:00'
       },
-      location: 'theater',
+      location: 'Theater',
       type: 'keynote',
       day: 'Tuesday'
     },
     {
-      id: '3',
+      id: 'tue-3',
       title: 'Coffee Break',
       time: {
         start: '10:00',
         end: '10:30'
       },
-      location: 'hall',
+      location: 'Lobby',
       type: 'break',
       day: 'Tuesday'
     },
     {
-      id: '4',
-      title: 'Talks',
+      id: 'tue-4',
+      title: 'Eugene Fletcher',
+      speaker: 'Eugene Fletcher',
+      chair: 'Mohamed Nasr',
       time: {
         start: '10:30',
-        end: '12:00'
+        end: '10:55'
       },
-      location: 'theater',
+      location: 'Theater',
       type: 'talk',
       day: 'Tuesday'
     },
     {
-      id: '5',
+      id: 'tue-5',
+      title: 'Michael Pyne',
+      speaker: 'Michael Pyne',
+      chair: 'Mohamed Nasr',
+      time: {
+        start: '10:55',
+        end: '11:20'
+      },
+      location: 'Theater',
+      type: 'talk',
+      day: 'Tuesday'
+    },
+    {
+      id: 'tue-6',
+      title: 'Xu (Charlie) Chen',
+      speaker: 'Xu (Charlie) Chen',
+      chair: 'Mohamed Nasr',
+      time: {
+        start: '11:20',
+        end: '11:35'
+      },
+      location: 'Theater',
+      type: 'talk',
+      day: 'Tuesday'
+    },
+    {
+      id: 'tue-7',
+      title: 'Mackenzie Thornbury',
+      speaker: 'Mackenzie Thornbury',
+      chair: 'Mohamed Nasr',
+      time: {
+        start: '11:35',
+        end: '11:50'
+      },
+      location: 'Theater',
+      type: 'talk',
+      day: 'Tuesday'
+    },
+    {
+      id: 'tue-8',
       title: 'Lunch / Poster Session',
       time: {
         start: '12:00',
         end: '13:30'
       },
-      location: 'hall',
+      location: 'Hall',
       type: 'break',
       day: 'Tuesday'
     },
     {
-      id: '6',
-      title: 'Keynote',
+      id: 'tue-9',
+      title: 'Jeremy Lant',
+      speaker: 'Jeremy Lant',
+      chair: 'Keith Pardee',
       time: {
         start: '13:30',
-        end: '14:30'
+        end: '13:55'
       },
-      location: 'theater',
-      type: 'keynote',
-      day: 'Tuesday'
-    },
-    {
-      id: '7',
-      title: 'Coffee Break',
-      time: {
-        start: '14:30',
-        end: '16:00'
-      },
-      location: 'hall',
-      type: 'break',
-      day: 'Tuesday'
-    },
-    {
-      id: '8',
-      title: 'Talks',
-      time: {
-        start: '16:00',
-        end: '17:00'
-      },
-      location: 'theater',
+      location: 'Theater',
       type: 'talk',
       day: 'Tuesday'
     },
     {
-      id: '9',
+      id: 'tue-10',
+      title: 'Ariel Corsano',
+      speaker: 'Ariel Corsano',
+      chair: 'Keith Pardee',
+      time: {
+        start: '13:55',
+        end: '14:10'
+      },
+      location: 'Theater',
+      type: 'talk',
+      day: 'Tuesday'
+    },
+    {
+      id: 'tue-11',
+      title: 'Amy Heathcote',
+      speaker: 'Amy Heathcote',
+      chair: 'Keith Pardee',
+      time: {
+        start: '14:10',
+        end: '14:25'
+      },
+      location: 'Theater',
+      type: 'talk',
+      day: 'Tuesday'
+    },
+    {
+      id: 'tue-12',
+      title: 'Coffee Break / SynBio Canada Workshop',
+      time: {
+        start: '14:30',
+        end: '16:00'
+      },
+      location: 'Lobby',
+      type: 'workshop',
+      day: 'Tuesday'
+    },
+    {
+      id: 'tue-13',
+      title: 'Keynote: Dr. Adam Damry - Health / Devices',
+      speaker: 'Dr. Adam Damry',
+      chair: 'Keith Pardee',
+      time: {
+        start: '16:00',
+        end: '17:00'
+      },
+      location: 'Theater',
+      type: 'keynote',
+      day: 'Tuesday'
+    },
+    {
+      id: 'tue-14',
       title: 'Concluding Remarks',
       time: {
         start: '17:00',
         end: '17:15'
       },
-      location: 'theater',
+      location: 'Theater',
       type: 'talk',
       day: 'Tuesday'
     }
-  ],
-  'Sunday': []
+  ]
 }

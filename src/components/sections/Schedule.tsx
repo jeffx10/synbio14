@@ -12,7 +12,14 @@ import { DayOfConference } from '@/types/schedule';
 
 const Schedule: React.FC = () => {
   const [activeDay, setActiveDay] = useState<DayOfConference>('Monday');
-  const days: DayOfConference[] = ['Monday', 'Tuesday'];
+  const days: DayOfConference[] = ['Sunday', 'Monday', 'Tuesday'];
+
+  // Map days to display names with dates
+  const dayDisplayNames = {
+    'Sunday': 'June 1',
+    'Monday': 'June 2', 
+    'Tuesday': 'June 3'
+  };
 
   return (
     <div className="max-w-6xl mx-auto px-4">
@@ -23,20 +30,23 @@ const Schedule: React.FC = () => {
             key={day}
             className={`px-6 py-3 rounded-full font-medium text-sm sm:text-base
               ${activeDay === day 
-                ? 'bg-gray-900 text-white' 
+                ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg' 
                 : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-              } transition-colors`}
+              } transition-all duration-200`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setActiveDay(day)}
           >
-            {day}
+            <div className="flex flex-col items-center">
+              <span className="font-semibold">{day}</span>
+              <span className="text-xs opacity-80">{dayDisplayNames[day]}</span>
+            </div>
           </motion.button>
         ))}
       </div>
 
       {/* Schedule Content */}
-      <div className="relative min-h-[400px]">
+      <div className="relative">
         {days.map((day) => (
           <ScheduleTab
             key={day}
