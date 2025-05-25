@@ -38,7 +38,9 @@ const Hero: React.FC<HeroProps> = ({ className, backgroundImage }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
+          <h1
+            className="text-[clamp(1.25rem,6vw+0.5rem,4.5rem)] md:text-7xl font-bold mb-6 text-white leading-tight break-words whitespace-normal"
+          >
             {CONFERENCE_INFO.name}
           </h1>
 
