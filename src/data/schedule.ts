@@ -147,7 +147,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     {
       id: 'mon-11',
       title: 'Giulio Chiesa',
-      speaker: 'Giulio Chiesa',
+      speaker: 'Sensing and Modulating Neurodegenerative Protein Aggregation With a Synthetic Protein Circuit',
       chair: 'Michael Garton',
       time: {
         start: '14:30',
@@ -233,48 +233,45 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     },
     {
       id: 'tue-2',
-      title: 'Keynote: Dr. Valerie Ward - Bioprocessing',
-      speaker: 'Dr. Valerie Ward',
-      chair: 'Chris Lawson',
-      time: {
-        start: '09:00',
-        end: '10:00'
-      },
-      location: 'Theater',
-      type: 'keynote',
-      day: 'Tuesday'
-    },
-    {
-      id: 'tue-3',
-      title: 'Coffee Break',
-      time: {
-        start: '10:00',
-        end: '10:30'
-      },
-      location: 'Lobby',
-      type: 'break',
-      day: 'Tuesday'
-    },
-    {
-      id: 'tue-4',
       title: 'Genomic and transcriptomic approaches identify targets for metabolic engineering of yeast tolerance to a PET plastic monomer',
       speaker: 'Eugene Fletcher',
       chair: 'Mohamed Nasr',
-      time: {
-        start: '10:30',
-        end: '10:55'
-      },
+      time: {start: '09:00',
+        end: '09:25'},
       location: 'Theater',
       type: 'talk',
       day: 'Tuesday'
-    },
-    {
+      },
+      {
       id: 'tue-5',
       title: 'Engineering non-conventional yeasts for production of muconic and adipic acids',
       speaker: 'Michael Pyne',
       chair: 'Mohamed Nasr',
       time: {
-        start: '10:55',
+        start: '09:25',
+        end: '09:50'
+      },
+      location: 'Theater',
+      type: 'talk',
+      day: 'Tuesday'
+    }
+    {
+      id: 'tue-3',
+      title: 'Coffee Break',
+      time: {
+        start: '09:50',
+        end: '10:20'
+      },
+      location: 'Lobby',
+      type: 'break',
+      day: 'Tuesday'
+    },
+{
+  title: 'Keynote: Dr. Valerie Ward - Bioprocessing',
+      speaker: 'Dr. Valerie Ward',
+      chair: 'Chris Lawson',
+      time: {
+        start: '10:20',
         end: '11:20'
       },
       location: 'Theater',
