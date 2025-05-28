@@ -68,9 +68,6 @@ const ScheduleTab: React.FC<ScheduleTabProps> = ({ day, items, isActive }) => {
         <div className="relative">
           {displayedItems && displayedItems.length > 0 ? (
             <>
-              {/* Vertical timeline line - only show for desktop */}
-              <div className="hidden md:block absolute left-24 top-0 bottom-0 w-px bg-gray-200"></div>
-              
               {displayedItems.map((item, index) => (
                 <motion.div
                   key={item.id}
@@ -86,22 +83,12 @@ const ScheduleTab: React.FC<ScheduleTabProps> = ({ day, items, isActive }) => {
                       <div className="text-gray-500 text-xs sm:text-sm">{item.time.end}</div>
                     </div>
 
-                    {/* Timeline dot - only show for desktop */}
-                    <div className="hidden md:flex flex-shrink-0 w-8 justify-center">
-                      <div className={`w-3 h-3 rounded-full ${
-                        item.type === 'keynote' ? 'bg-blue-500' :
-                        item.type === 'break' ? 'bg-orange-400' :
-                        item.type === 'registration' ? 'bg-gray-400' :
-                        'bg-gray-300'
-                      }`}></div>
-                    </div>
-
                     {/* Content */}
-                    <div className="flex-1 min-w-0 ml-2 sm:ml-0 flex items-start justify-between gap-4">
+                    <div className="flex-1 min-w-0 ml-2 sm:ml-4 flex items-start justify-between gap-4">
                       <div className="flex-1">
                         {/* Title with icon */}
                         <div className="flex items-start gap-2 mb-1">
-                          <span className={`flex-shrink-0 mt-0.5 ${
+                          <span className={`flex-shrink-0 mt-1 ${
                             item.type === 'keynote' ? 'text-blue-600' :
                             item.type === 'break' ? 'text-orange-600' :
                             item.type === 'registration' ? 'text-gray-600' :

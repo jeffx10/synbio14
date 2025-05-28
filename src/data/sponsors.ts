@@ -36,6 +36,13 @@ export const sponsors: Sponsor[] = [
     logoUrl: '/images/OG-25_Logo-Blue.png',
     website: 'https://www.ontariogenomics.ca/'
   },
+  {
+    id: 'CSP',
+    name: 'Canadian Science Publishing',
+    tier: 'silver',
+    logoUrl: '/images/Canadian_Science_Publishing_logo.png',
+    website: 'https://cdnsciencepub.com/'
+  },
   // Bronze sponsors
   {
     id: 'kapoose-creek',

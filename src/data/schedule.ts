@@ -70,9 +70,9 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     },
     {
       id: 'mon-5',
-      title: 'Rachel Gregor',
+      title: 'A sea of signals: quorum sensing regulates particle-associated bacterial communities in the surface oceans',
       speaker: 'Rachel Gregor',
-      chair: 'TBD',
+      chair: 'Chris Lawson',
       time: {
         start: '10:45',
         end: '11:10'
@@ -83,9 +83,9 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     },
     {
       id: 'mon-6',
-      title: 'Jeff Bouffard',
+      title: 'Using synthetic biology for engineering designer Saccharomyces cerevisiae extracellular vesicles',
       speaker: 'Jeff Bouffard',
-      chair: 'TBD',
+      chair: 'Chris Lawson',
       time: {
         start: '11:10',
         end: '11:25'
@@ -96,9 +96,9 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     },
     {
       id: 'mon-7',
-      title: 'Harold Flohr',
+      title: 'Evolution of Synthetic Gene Circuits  and Antifungal Resistance in Fluctuating Drug Conditions',
       speaker: 'Harold Flohr',
-      chair: 'TBD',
+      chair: 'Chris Lawson',
       time: {
         start: '11:25',
         end: '11:40'
@@ -109,9 +109,9 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     },
     {
       id: 'mon-8',
-      title: 'Nicholas Gervais',
+      title: 'Understanding Aneuploidy-Mediated Phenotypes via CRISPRa-dCas9 Screening and HyperdCas12a Multiplexing',
       speaker: 'Nicholas Gervais',
-      chair: 'TBD',
+      chair: 'Chris Lawson',
       time: {
         start: '11:40',
         end: '11:55'
@@ -159,7 +159,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     },
     {
       id: 'mon-12',
-      title: 'Brittany Greco',
+      title: 'Systematic analysis of complex genetic interactions of conserved mitochondrial carriers',
       speaker: 'Brittany Greco',
       chair: 'Michael Garton',
       time: {
@@ -172,7 +172,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     },
     {
       id: 'mon-13',
-      title: 'Roy Hwang',
+      title: 'Accelerated Reprogramming of hiPSCs into Functional Brain Endothelial Cells with Multiplexed CRISPR Activation',
       speaker: 'Roy Hwang',
       chair: 'Michael Garton',
       time: {
@@ -256,7 +256,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     },
     {
       id: 'tue-4',
-      title: 'Eugene Fletcher',
+      title: 'Genomic and transcriptomic approaches identify targets for metabolic engineering of yeast tolerance to a PET plastic monomer',
       speaker: 'Eugene Fletcher',
       chair: 'Mohamed Nasr',
       time: {
@@ -269,7 +269,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     },
     {
       id: 'tue-5',
-      title: 'Michael Pyne',
+      title: 'Engineering non-conventional yeasts for production of muconic and adipic acids',
       speaker: 'Michael Pyne',
       chair: 'Mohamed Nasr',
       time: {
@@ -282,7 +282,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     },
     {
       id: 'tue-6',
-      title: 'Xu (Charlie) Chen',
+      title: 'Accelerated Design of Synthetic Microbiome for Sustainable Chemical Production from Organic Waste',
       speaker: 'Xu (Charlie) Chen',
       chair: 'Mohamed Nasr',
       time: {
@@ -295,7 +295,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     },
     {
       id: 'tue-7',
-      title: 'Mackenzie Thornbury',
+      title: 'Genome-Wide Trifunctional CRISPR Screen for Enhanced Fumaric Acid Tolerance in Kluyveromyces marxianus',
       speaker: 'Mackenzie Thornbury',
       chair: 'Mohamed Nasr',
       time: {
@@ -319,7 +319,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     },
     {
       id: 'tue-9',
-      title: 'Jeremy Lant',
+      title: 'A multimodal digital microfluidic testing platform for antibody-producing cell lines',
       speaker: 'Jeremy Lant',
       chair: 'Keith Pardee',
       time: {
@@ -332,7 +332,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     },
     {
       id: 'tue-10',
-      title: 'Ariel Corsano',
+      title: 'A Multiplexed CRISPR-Cas12a Platform to Detect MicroRNA at the Point of Need',
       speaker: 'Ariel Corsano',
       chair: 'Keith Pardee',
       time: {
@@ -345,7 +345,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     },
     {
       id: 'tue-11',
-      title: 'Amy Heathcote',
+      title: 'Engineering CRISPR-based diagnostics for the rapid detection of Candida and antimicrobial resistance biomarkers',
       speaker: 'Amy Heathcote',
       chair: 'Keith Pardee',
       time: {
