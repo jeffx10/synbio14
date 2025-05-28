@@ -243,7 +243,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
       day: 'Tuesday'
       },
       {
-      id: 'tue-5',
+      id: 'tue-3',
       title: 'Engineering non-conventional yeasts for production of muconic and adipic acids',
       speaker: 'Michael Pyne',
       chair: 'Mohamed Nasr',
@@ -256,7 +256,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
       day: 'Tuesday'
     },
     {
-      id: 'tue-3',
+      id: 'tue-4',
       title: 'Coffee Break',
       time: {
         start: '09:50',
@@ -266,8 +266,9 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
       type: 'break',
       day: 'Tuesday'
     },
-{
-  title: 'Keynote: Dr. Valerie Ward - Bioprocessing',
+    {
+      id: 'tue-5',
+      title: 'Keynote: Dr. Valerie Ward - Bioprocessing',
       speaker: 'Dr. Valerie Ward',
       chair: 'Chris Lawson',
       time: {
