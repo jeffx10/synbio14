@@ -146,8 +146,8 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     },
     {
       id: 'mon-11',
-      title: 'Giulio Chiesa',
-      speaker: 'Sensing and Modulating Neurodegenerative Protein Aggregation With a Synthetic Protein Circuit',
+      title: 'Sensing and Modulating Neurodegenerative Protein Aggregation With a Synthetic Protein Circuit',
+      speaker: 'Giulio Chiesa',
       chair: 'Michael Garton',
       time: {
         start: '14:30',
