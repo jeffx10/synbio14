@@ -36,6 +36,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
     {
       id: 'mon-2',
       title: 'Welcome Remarks',
+      speaker: "Dr. Rebecca Shapiro",
       time: {
         start: '09:00',
         end: '09:15'
@@ -48,7 +49,6 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
       id: 'mon-3',
       title: 'Keynote: Dr. Kevin Solomon',
       speaker: 'Dr. Kevin Solomon',
-      chair: 'TBD',
       time: {
         start: '09:15',
         end: '10:15'
@@ -198,6 +198,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
       id: 'mon-15',
       title: 'Keynote: Dr. Benjamin Scott',
       speaker: 'Dr. Benjamin Scott',
+      chair: "Giulio Chiesa",
       time: {
         start: '16:00',
         end: '17:00'
@@ -234,7 +235,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
       id: 'tue-2',
       title: 'Keynote: Dr. Valerie Ward - Bioprocessing',
       speaker: 'Dr. Valerie Ward',
-      chair: 'Mohamed Nasr',
+      chair: 'Chris Lawson',
       time: {
         start: '09:00',
         end: '10:00'
@@ -371,7 +372,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
       id: 'tue-13',
       title: 'Keynote: Dr. Adam Damry - Health / Devices',
       speaker: 'Dr. Adam Damry',
-      chair: 'Keith Pardee',
+      chair: 'Nikki Weckman',
       time: {
         start: '16:00',
         end: '17:00'
