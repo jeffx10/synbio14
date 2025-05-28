@@ -254,7 +254,7 @@ export const schedule: Record<DayOfConference, ScheduleItem[]> = {
       location: 'Theater',
       type: 'talk',
       day: 'Tuesday'
-    }
+    },
     {
       id: 'tue-3',
       title: 'Coffee Break',
