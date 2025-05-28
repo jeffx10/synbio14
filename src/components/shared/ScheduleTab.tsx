@@ -88,7 +88,7 @@ const ScheduleTab: React.FC<ScheduleTabProps> = ({ day, items, isActive }) => {
                       <div className="flex-1">
                         {/* Title with icon */}
                         <div className="flex items-start gap-2 mb-1">
-                          <span className={`flex-shrink-0 mt-1 ${
+                          <span className={`flex-shrink-0 mt-0.5 ${
                             item.type === 'keynote' ? 'text-blue-600' :
                             item.type === 'break' ? 'text-orange-600' :
                             item.type === 'registration' ? 'text-gray-600' :
