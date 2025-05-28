@@ -79,7 +79,7 @@ const Sponsors: React.FC = () => {
       >
         <div className="overflow-hidden" ref={containerRef}>
           <motion.div
-            className="flex gap-8 justify-center flex-wrap"
+            className="space-y-16"
             animate={controls}
           >
             {Object.entries(sponsorsByTier)
@@ -89,31 +89,82 @@ const Sponsors: React.FC = () => {
                   key={tier}
                   className="w-full"
                 >
-                  <h3 className="text-lg font-medium text-center mb-6 capitalize">
+                  <h3 className="text-lg font-medium text-center mb-8 capitalize">
                     {tier} Sponsors
                   </h3>
-                  <div className="flex flex-wrap justify-center gap-8">
-                    {tierSponsors.map((sponsor) => (
-                      <motion.a
-                        key={sponsor.id}
-                        href={sponsor.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`relative ${tierConfig[sponsor.tier].height} 
-                                  ${tierConfig[sponsor.tier].width} flex items-center 
-                                  justify-center p-4 bg-white rounded-lg shadow-md
-                                  hover:shadow-lg transition-shadow`}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        <img
-                          src={sponsor.logoUrl}
-                          alt={sponsor.name}
-                          className="max-w-full max-h-full object-contain"
-                        />
-                      </motion.a>
-                    ))}
-                  </div>
+                  {tier === 'silver' ? (
+                    // Special layout for silver sponsors - 2 rows of 3
+                    <div className="space-y-8">
+                      <div className="flex flex-wrap justify-center gap-8">
+                        {tierSponsors.slice(0, 3).map((sponsor) => (
+                          <motion.a
+                            key={sponsor.id}
+                            href={sponsor.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`relative ${tierConfig[sponsor.tier].height} 
+                                      ${tierConfig[sponsor.tier].width} flex items-center 
+                                      justify-center p-4 bg-white rounded-lg shadow-md
+                                      hover:shadow-lg transition-shadow`}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                          >
+                            <img
+                              src={sponsor.logoUrl}
+                              alt={sponsor.name}
+                              className="max-w-full max-h-full object-contain"
+                            />
+                          </motion.a>
+                        ))}
+                      </div>
+                      <div className="flex flex-wrap justify-center gap-8">
+                        {tierSponsors.slice(3).map((sponsor) => (
+                          <motion.a
+                            key={sponsor.id}
+                            href={sponsor.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`relative ${tierConfig[sponsor.tier].height} 
+                                      ${tierConfig[sponsor.tier].width} flex items-center 
+                                      justify-center p-4 bg-white rounded-lg shadow-md
+                                      hover:shadow-lg transition-shadow`}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                          >
+                            <img
+                              src={sponsor.logoUrl}
+                              alt={sponsor.name}
+                              className="max-w-full max-h-full object-contain"
+                            />
+                          </motion.a>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    // Default layout for other tiers
+                    <div className="flex flex-wrap justify-center gap-8">
+                      {tierSponsors.map((sponsor) => (
+                        <motion.a
+                          key={sponsor.id}
+                          href={sponsor.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`relative ${tierConfig[sponsor.tier].height} 
+                                    ${tierConfig[sponsor.tier].width} flex items-center 
+                                    justify-center p-4 bg-white rounded-lg shadow-md
+                                    hover:shadow-lg transition-shadow`}
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          <img
+                            src={sponsor.logoUrl}
+                            alt={sponsor.name}
+                            className="max-w-full max-h-full object-contain"
+                          />
+                        </motion.a>
+                      ))}
+                    </div>
+                  )}
                 </motion.div>
               ))}
           </motion.div>

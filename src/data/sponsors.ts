@@ -37,6 +37,13 @@ export const sponsors: Sponsor[] = [
     website: 'https://www.ontariogenomics.ca/'
   },
   {
+    id: 'genscript',
+    name: 'Genscript',
+    tier: 'silver',
+    logoUrl: '/images/GenScript_Biotech_logo.svg',
+    website: 'https://www.genscript.com/'
+  },
+  {
     id: 'CSP',
     name: 'Canadian Science Publishing',
     tier: 'silver',
